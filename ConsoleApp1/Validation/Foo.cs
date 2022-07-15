@@ -5,8 +5,6 @@
         static string Checked(string s) => s ?? throw new ArgumentNullException("s");
         public Foo(string s) : base(Checked(s).Length)
         {  
-
         }
-
     }
 }
