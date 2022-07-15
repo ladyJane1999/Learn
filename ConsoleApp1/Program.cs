@@ -12,6 +12,9 @@ airplane.Move();
 // Distance
 void SavePathToDb(string cargold, Distance milesPath, Distance KmPath)
 {
+    Console.WriteLine(milesPath.Meters);
+    Console.WriteLine( KmPath.Meters);
+    Console.WriteLine((milesPath+ KmPath).Meters);
 }
 
 var id = "test";
