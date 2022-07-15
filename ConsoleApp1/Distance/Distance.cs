@@ -18,7 +18,7 @@
 
         public override bool Equals(object? obj) => obj is Distance other && Equals(other);
         public bool Equals(Distance other) => meters == other.meters;
-        public override int GetHashCode() => HashCode.Combine(meters);
+        public override int GetHashCode() => meters.GetHashCode();
         public static bool operator ==(Distance left, Distance right) => left.Equals(right);
         public static bool operator !=(Distance left, Distance right) => !(left == right);
 
